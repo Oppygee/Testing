@@ -3,6 +3,7 @@
 exports.up = (knex) => {
   return knex.schema.createTable('User', table => {
     table.string('user_id').primary().notNullable()
+    table.string('merchant_id').primary().notNullable().references('merchant_id').inTable('Merchant')
     table.string('user_name', 100).defaultTo(null)
     table.string('password_hash').notNullable()
     table.string('password_salt').notNullable()

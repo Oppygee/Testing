@@ -13,10 +13,10 @@ app.listen(port, ()=>{
 
 
 
-    redisClient.connect().catch(() => {
-        console.log('Redis client not connected');
-        process.exit(1)
-    })
+    // redisClient.connect().catch(() => {
+    //     console.log('Redis client not connected');
+    //     process.exit(1)
+    // })
 
     
     
