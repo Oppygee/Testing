@@ -7,7 +7,7 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "migrate": "npx knex migrate:latest --knexfile ./config/database.js",
-    "undo-migrate": "npx knex migrate:rollback --all --knexfile ./config/database.js",
+    "unMigrate": "npx knex migrate:rollback --all --knexfile ./config/database.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
