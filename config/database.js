@@ -20,7 +20,7 @@ module.exports = {
       afterCreate: (conn, done) => {
         conn.query("SELECT NOW();", (err) => {
           if (err) {
-            console.log(err);
+            console.log(err); //use console.error here
           }
           done(err, conn);
         });
